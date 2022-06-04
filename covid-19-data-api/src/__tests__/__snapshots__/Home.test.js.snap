@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render components render Homepage correctly 1`] = `
+Array [
+  <form
+    className="search-bar"
+    onChange={[Function]}
+  >
+    <div
+      className="search-bar__wrapper"
+    >
+      <h1>
+        Covid Data stats
+      </h1>
+      <input
+        className="input"
+        placeholder="Country Name"
+      />
+    </div>
+  </form>,
+  <div
+    className="container"
+  >
+    <ul
+      className="grid-container"
+    >
+      ;
+    </ul>
+  </div>,
+]
+`;
