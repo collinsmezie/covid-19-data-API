@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-<h1 align="center"> Covid Country Metrics </h1>
+<h1 align="center"> Covid data  Metrics </h1>
 
 > The application fetches Covid Data from the Narrativa API and shows in a country by country display according to the date you are looking for.
 
@@ -10,7 +10,7 @@
 
 ## DEMO
 
-[Live Demo Link](https://heroku_link_goes_here.com)
+[Live Demo Link](https://covid-data-stats.netlify.app/)
 [Video Demo Link](https://www.loom.com/share/5fa4ea687ee84c37b22f1b6cabf1239c)
 
 ## Getting Started
