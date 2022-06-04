@@ -13,7 +13,8 @@
 ## DEMO
 
 [Live Demo Link](https://covid-data-stats.netlify.app/)
-[Video Demo Link](https://www.loom.com/share/5fa4ea687ee84c37b22f1b6cabf1239c)
+
+[Video Demo Link](https://www.loom.com/share/2a94f61fbd5247b7b1b40c5b5ecdd207)
 
 ## Getting Started
 
