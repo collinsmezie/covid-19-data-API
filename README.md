@@ -8,6 +8,8 @@
 
 - **Reactjs** and **Redux** and **Javascript**
 
+<img src="src/images/Screenshot from 2022-06-05 00-03-22.png">
+<img src="src/images/Screenshot from 2022-06-05 00-04-09.png">
 ## DEMO
 
 [Live Demo Link](https://covid-data-stats.netlify.app/)
