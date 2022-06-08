@@ -14,7 +14,9 @@ const Homepage = () => {
     if (countries.length === 0) {
       dispatch(fetchCountries());
     }
-  }, []);
+  }, [dispatch]);
+
+  const totalCases = countries.reduce((prev, curr) => prev + curr.cases, 0);
 
   return (
     <>
@@ -31,6 +33,10 @@ const Homepage = () => {
         </div>
       </form>
       <div className="container">
+        <h3 className="total">
+          Total number of Cases:
+          {totalCases}
+        </h3>
         <ul className="grid-container">
           {countries
 

@@ -12,7 +12,7 @@ const Details = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (countries.length !== 0) {
+    if (countries.countries.length === 0) {
       dispatch(fetchCountries());
     }
   }, [dispatch]);

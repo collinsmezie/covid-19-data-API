@@ -7,11 +7,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  /* background-color: #ff6ba3; */
   background-color: #f193b7;
-  width: 100%;
+  width: 92%;
   border-radius: 8px;
   border: 1px solid lightgray;
-  padding: 10px;
+  padding: 12px;
   margin: 2px 0 2px 0;
 }
 
