@@ -5,7 +5,8 @@
 }
 
 form {
-  background-color: #fd5394;
+  /* background-color: #fd5394; */
+  background-color: #f074a4;
   padding: 20px;
   margin-bottom: 4%;
 }
@@ -20,6 +21,14 @@ input {
 
 form h1 {
   color: rgb(41, 41, 41);
+}
+
+.total {
+  padding-bottom: 20px;
+}
+
+.grid-container {
+  padding: 10px;
 }
 
 @media screen and (min-width: 992px) {

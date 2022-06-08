@@ -1,6 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .details_container {
   background-color: #c27190;
   padding: 10%;
+  padding-bottom: 42%;
 }
 
 .flex {
@@ -10,7 +16,6 @@
 }
 
 .title {
-  margin-left: 10%;
   color: rgb(214, 214, 214);
 }
 
@@ -40,5 +45,10 @@
 
   .title {
     margin-left: 39%;
+  }
+
+  .details_container {
+    padding: 10%;
+    padding-bottom: 10%;
   }
 }
