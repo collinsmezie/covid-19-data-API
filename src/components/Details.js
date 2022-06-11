@@ -8,33 +8,30 @@ import './Details.css';
 
 const Details = () => {
   const { countryName } = useParams();
-  const countries = useSelector((state) => state.homeReducer);
   const dispatch = useDispatch();
-
   useEffect(() => {
-    if (countries.countries.length === 0) {
-      dispatch(fetchCountries());
-    }
+    dispatch(fetchCountries());
   }, [dispatch]);
 
-  try {
-    return (
-      <div className="container">
-        {countries.countries.map((country) => (
-          <div key={country.id}>
-            {country.country === countryName && (
-            <div className="details_container">
-              <NavLink to="/">
-                <FontAwesomeIcon
-                  className="icons"
-                  icon={faArrowLeft}
-                />
-              </NavLink>
-              <img src={country.flag} alt="covid-images" className="imgs" />
+  const countries = useSelector((state) => state.homeReducer);
+
+  return (
+    <div>
+      {countries.countries.map((country) => (
+        <div key={country.id}>
+          {country.country === countryName && (
+          <div className="details_container">
+            <NavLink to="/">
+              <FontAwesomeIcon
+                className="icons"
+                icon={faArrowLeft}
+              />
+            </NavLink>
+            <div className="containers">
               <div className="flex">
-                <h3 className="title">Country:</h3>
-                <h3 className="t_bg">{country.country}</h3>
+                <h2 className="t_bg">{country.country}</h2>
               </div>
+              <img src={country.flag} alt="covid-images" className="imgs" />
               <div className="flex">
                 <h3 className="title">Population:</h3>
                 <h3 className="t_bg">{country.population}</h3>
@@ -76,14 +73,12 @@ const Details = () => {
                 <h3 className="t_bg">{country.tests}</h3>
               </div>
             </div>
-            )}
           </div>
-        ))}
-      </div>
-    );
-  } catch (error) {
-    return error.message;
-  }
+          )}
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Details;

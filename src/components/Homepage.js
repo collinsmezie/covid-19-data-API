@@ -1,8 +1,8 @@
 import { generate } from 'randomized-string';
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchCountries } from '../redux/Homepage/homeReducer';
 import Country from './Country';
+import { fetchCountries } from '../redux/Homepage/homeReducer';
 import './Homepage.css';
 
 const Homepage = () => {
@@ -25,18 +25,18 @@ const Homepage = () => {
         onChange={(event) => setFormState(event.target.value)}
       >
         <div className="search-bar__wrapper">
-          <h1>Covid Data stats</h1>
+          <h1>Covid-19 Data Metrics</h1>
           <input
             className="input"
-            placeholder="Country Name"
+            placeholder="Search by country name"
           />
         </div>
       </form>
       <div className="container">
-        <h3 className="total">
+        <h4 className="total">
           Total number of Cases:
           {totalCases}
-        </h3>
+        </h4>
         <ul className="grid-container">
           {countries
 
@@ -50,7 +50,6 @@ const Homepage = () => {
                 />
               </div>
             ))}
-          ;
         </ul>
       </div>
     </>

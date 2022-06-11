@@ -24,10 +24,10 @@ const initialState = {
 
 };
 
-export const fetchCountries = () => async (dispatch) => {
+export const fetchCountries = () => (dispatch) => {
   dispatch(loadingAction());
 
-  await fetch(URL)
+  fetch(URL)
     .then((response) => response.json())
     .then((result) => {
       const countries = [];
