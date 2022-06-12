@@ -24,24 +24,35 @@
   color: whitesmoke;
 }
 
-.icons {
+.t_bg-name {
+  color: whitesmoke;
+  margin: auto;
+}
+
+/* .icons {
   position: relative;
   top: -175px;
   left: -35px;
   font-size: 20px;
   color: white;
+} */
+
+.icons {
+  display: none;
 }
 
 .imgs {
-  margin: 10% 0 10% 0;
+  margin: 10% 1% 10% -14px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .icons {
+    display: block;
     position: relative;
-    top: -224px;
-    left: -400px;
-    font-size: 27px;
+    top: 34px;
+    left: 50px;
+    font-size: 25px;
+    color: whitesmoke;
   }
 
   .title {
@@ -49,7 +60,16 @@
   }
 
   .details_container {
-    padding: 10%;
-    padding-bottom: 10%;
+    padding: 0;
+    overflow: scroll;
+  }
+
+  .t_bg-name {
+    margin: auto;
+    color: whitesmoke;
+  }
+
+  .imgs {
+    margin: 1% 0 2% 0;
   }
 }
