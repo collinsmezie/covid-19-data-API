@@ -29,7 +29,7 @@ const Details = () => {
             </NavLink>
             <div className="containers">
               <div className="flex">
-                <h2 className="t_bg">{country.country}</h2>
+                <h2 className="t_bg-name">{country.country}</h2>
               </div>
               <img src={country.flag} alt="covid-images" className="imgs" />
               <div className="flex">
